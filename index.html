@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    
+    
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <!--
+         <link href="./assets/grid.css" rel="stylesheet"> equalizer.css
+         <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+    -->
+
+  </head>
+
+  <body>
+    
+    
+<app><html><head><title></title><style>@media (max-width: 767px) {
+    
+    .body-content[_ngcontent-0] {
+        padding-top: 50px;
+    }
+}</style><style>.player[_ngcontent-3] {
+    margin-top: 50px;
+}</style><style>.list-group-item[_ngcontent-1] {
+    padding: 0;
+}
+
+.song[_ngcontent-1] {
+    padding: 10px 5px 10px 5px;
+}
+
+.btn-dots[_ngcontent-1] {
+    border: 0px;
+    padding: 4px 5px 6px 5px;
+    font-size: 1.3em;
+}
+
+.btn-dots[_ngcontent-1]:hover {
+    color: red;
+}
+
+button[_ngcontent-1] {
+    background: inherit;
+    border: 0px;
+    padding: 4px 5px 6px 5px;
+}
+
+button[_ngcontent-1]:hover {
+    background: inherit;
+    color: red;
+}
+
+.playlist[_ngcontent-1]   li[_ngcontent-1]:hover, .musiclist[_ngcontent-1]   li[_ngcontent-1]:hover, .btn-dots[_ngcontent-1]:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+.indicator[_ngcontent-1] {
+    height: 200px;
+}
+
+.equalizer[_ngcontent-1] {
+    position: absolute;
+    bottom: 27%;
+    left: 90%;
+    display: block;
+    width: 5px;
+    background-color: #336699;
+    height: 2.5px;
+}
+
+.equalizer[_ngcontent-1], .equalizer[_ngcontent-1]::before, .equalizer[_ngcontent-1]::after {
+    animation: equalize 1.25s steps(25, end) 0s infinite;
+}
+
+.equalizer[_ngcontent-1]::before, .equalizer[_ngcontent-1]::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 7px;
+    height: 17.5px;
+    width: 5px;
+    background-color: #336699;
+}
+
+.equalizer[_ngcontent-1]::before {
+    animation-name: equalize2;
+}
+
+.equalizer[_ngcontent-1]::after {
+    left: 14px;
+    animation-name: equalize3;
+}
+
+@keyframes equalize {
+    0% {
+        height: 5px;
+    }
+    4% {
+        height: 2.5px;
+    }
+    8% {
+        height: 5px;
+    }
+    12% {
+        height: 8.75px;
+    }
+    16% {
+        height: 12.5px;
+    }
+    20% {
+        height: 16.25px;
+    }
+    24% {
+        height: 15px;
+    }
+    28% {
+        height: 13.75px;
+    }
+    32% {
+        height: 13.75px;
+    }
+    36% {
+        height: 10px;
+    }
+    40% {
+        height: 12.5px;
+    }
+    44% {
+        height: 12.5px;
+    }
+    48% {
+        height: 13.75px;
+    }
+    52% {
+        height: 15px;
+    }
+    56% {
+        height: 16.25px;
+    }
+    60% {
+        height: 15px;
+    }
+    64% {
+        height: 15px;
+    }
+    68% {
+        height: 13.75px;
+    }
+    72% {
+        height: 12.5px;
+    }
+    76% {
+        height: 13.75px;
+    }
+    80% {
+        height: 15px;
+    }
+    84% {
+        height: 15px;
+    }
+    88% {
+        height: 16.25px;
+    }
+    92% {
+        height: 12.5px;
+    }
+    96% {
+        height: 8.75px;
+    }
+    100% {
+        height: 5px;
+    }
+}
+
+@keyframes equalize2 {
+    0% {
+        height: 15px;
+    }
+    4% {
+        height: 16.25px;
+    }
+    8% {
+        height: 15px;
+    }
+    12% {
+        height: 15px;
+    }
+    16% {
+        height: 13.75px;
+    }
+    20% {
+        height: 13.75px;
+    }
+    24% {
+        height: 13.75px;
+    }
+    28% {
+        height: 15px;
+    }
+    32% {
+        height: 15px;
+    }
+    36% {
+        height: 16.25px;
+    }
+    40% {
+        height: 16.25px;
+    }
+    44% {
+        height: 16.25px;
+    }
+    48% {
+        height: 13.75px;
+    }
+    52% {
+        height: 10px;
+    }
+    56% {
+        height: 7.5px;
+    }
+    60% {
+        height: 10px;
+    }
+    64% {
+        height: 12.5px;
+    }
+    68% {
+        height: 13.75px;
+    }
+    72% {
+        height: 16.25px;
+    }
+    76% {
+        height: 15px;
+    }
+    80% {
+        height: 15px;
+    }
+    84% {
+        height: 13.75px;
+    }
+    88% {
+        height: 13.75px;
+    }
+    92% {
+        height: 11.25px;
+    }
+    96% {
+        height: 13.75px;
+    }
+    100% {
+        height: 15px;
+    }
+}
+
+@keyframes equalize3 {
+    0% {
+        height: 11.25px;
+    }
+    4% {
+        height: 8.75px;
+    }
+    8% {
+        height: 11.25px;
+    }
+    12% {
+        height: 13.75px;
+    }
+    16% {
+        height: 16.25px;
+    }
+    20% {
+        height: 18.75px;
+    }
+    24% {
+        height: 17.5px;
+    }
+    28% {
+        height: 13.75px;
+    }
+    32% {
+        height: 11.25px;
+    }
+    36% {
+        height: 10px;
+    }
+    40% {
+        height: 8.75px;
+    }
+    44% {
+        height: 6.25px;
+    }
+    48% {
+        height: 10px;
+    }
+    52% {
+        height: 12.5px;
+    }
+    56% {
+        height: 13.75px;
+    }
+    60% {
+        height: 16.25px;
+    }
+    64% {
+        height: 15px;
+    }
+    68% {
+        height: 13.75px;
+    }
+    72% {
+        height: 13.75px;
+    }
+    76% {
+        height: 12.5px;
+    }
+    80% {
+        height: 15px;
+    }
+    84% {
+        height: 16.25px;
+    }
+    88% {
+        height: 17.5px;
+    }
+    92% {
+        height: 15px;
+    }
+    96% {
+        height: 12.5px;
+    }
+    100% {
+        height: 11.25px;
+    }
+}
+
+.playlist-item[_ngcontent-1] {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border: 0px;
+    background: inherit;
+}
+
+.input-group-addon[_ngcontent-1] {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border: 0px;
+    background: inherit;
+}
+
+.input-group-addon[_ngcontent-1]:hover {
+    background: inherit;
+}</style><style>.musiclist[_ngcontent-2]   li[_ngcontent-2]
+{
+    height:70px;
+}
+
+.musiclist[_ngcontent-2]   li[_ngcontent-2]   .badge[_ngcontent-2], .playlist[_ngcontent-2]   li[_ngcontent-2]   .badge[_ngcontent-2]
+{
+    background-color: inherit;
+    font-size:inherit;
+}
+
+.musiclist[_ngcontent-2]   li[_ngcontent-2]:hover
+{
+    background:#eee;
+    cursor: pointer;
+}</style></head><body><app ng-version="2.4.10" _nghost-0=""><div _ngcontent-0="" class="container">
+        <router-outlet _ngcontent-0=""></router-outlet><music-player _nghost-3=""><div _ngcontent-3="" class="player">
+    <div _ngcontent-3="" class="row">
+        <!--template bindings={}-->
+    </div>
+    <div _ngcontent-3="" class="row">
+        <div _ngcontent-3="" class="col-xs-12 col-lg-4">
+            <playlist _ngcontent-3="" _nghost-1=""><ul _ngcontent-1="" class="list-group playlist">
+    <!--template bindings={}-->
+</ul></playlist>
+        </div>
+        <div _ngcontent-3="" class="col-xs-12 col-sm-12 col-lg-8">
+            <songlist _ngcontent-3="" _nghost-2=""><ul _ngcontent-2="" class="list-group musiclist">
+    <!--template bindings={}--><li _ngcontent-2="" class="list-group-item">
+        213 wqeqwe
+        <span _ngcontent-2="" class="badge">
+            <button _ngcontent-2="" class="btn btn-default">
+                <span _ngcontent-2="" aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+            </button>
+        </span>
+    </li><li _ngcontent-2="" class="list-group-item">
+        213a2a wqeqwe2
+        <span _ngcontent-2="" class="badge">
+            <button _ngcontent-2="" class="btn btn-default">
+                <span _ngcontent-2="" aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+            </button>
+        </span>
+    </li><li _ngcontent-2="" class="list-group-item">
+        aaa2132 aawqeqaaawe2
+        <span _ngcontent-2="" class="badge">
+            <button _ngcontent-2="" class="btn btn-default">
+                <span _ngcontent-2="" aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+            </button>
+        </span>
+    </li> 
+
+    0               
+</ul></songlist>
+            <nav _ngcontent-3="" aria-label="Page navigation">
+                <ul _ngcontent-3="" class="pagination">
+                    <li _ngcontent-3="">
+                        <a _ngcontent-3="" aria-label="Previous" href="#">
+                            <span _ngcontent-3="" aria-hidden="true">«</span>
+                        </a>
+                    </li>
+                    <li _ngcontent-3=""><a _ngcontent-3="" href="#">1</a></li>
+                    <li _ngcontent-3=""><a _ngcontent-3="" href="#">2</a></li>
+                    <li _ngcontent-3=""><a _ngcontent-3="" href="#">3</a></li>
+                    <li _ngcontent-3=""><a _ngcontent-3="" href="#">4</a></li>
+                    <li _ngcontent-3=""><a _ngcontent-3="" href="#">5</a></li>
+                    <li _ngcontent-3="">
+                        <a _ngcontent-3="" aria-label="Next" href="#">
+                            <span _ngcontent-3="" aria-hidden="true">»</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div></music-player>
+</div> </app><universal-script><script>
+ try {window.UNIVERSAL_CACHE = ({"APP_ID":"2d7b"}) || {};} catch(e) {  console.warn("Angular Universal: There was a problem parsing data from the server")}
+</script></universal-script></body></html></app>
+
+<script src="/dist/vendor.js?v=vOJCaVt-OToMTujuAtN2etyNPuVrLtA5pZMkAwnMnOk"></script>
+
+    
+    <script src="/dist/main-client.js?v=ToxJOs01BRUQMEWb4nYrb050WP_P2wh7kmMGeGfuJ7I"></script>
+
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/audiojs/audio.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/id3.js"></script>
+  
+</body>
+</html>
