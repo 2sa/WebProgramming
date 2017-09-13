@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <base href="/">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    
+    
+    <link href="~/assets/css/bootstrap.css" rel="stylesheet">
+    <!--
+         <link href="./assets/grid.css" rel="stylesheet"> equalizer.css
+         <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+    -->
+
+  </head>
+
+  <body>
+    
+    @RenderBody()
+    @RenderSection("scripts", required: false)
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/audiojs/audio.js"></script>
+    <script src="~/assets/js/index.js"></script>
+    <script src="~/assets/js/id3.js"></script>
+  
+</body>
+</html>

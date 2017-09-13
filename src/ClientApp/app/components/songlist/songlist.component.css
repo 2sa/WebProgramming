@@ -1,0 +1,16 @@
+.musiclist li
+{
+    height:70px;
+}
+
+.musiclist li .badge, .playlist li .badge
+{
+    background-color: inherit;
+    font-size:inherit;
+}
+
+.musiclist li:hover
+{
+    background:#eee;
+    cursor: pointer;
+}

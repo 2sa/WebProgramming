@@ -1,0 +1,336 @@
+.list-group-item {
+    padding: 0;
+}
+
+.song {
+    padding: 10px 5px 10px 5px;
+}
+
+.btn-dots {
+    border: 0px;
+    padding: 4px 5px 6px 5px;
+    font-size: 1.3em;
+}
+
+.btn-dots:hover {
+    color: red;
+}
+
+button {
+    background: inherit;
+    border: 0px;
+    padding: 4px 5px 6px 5px;
+}
+
+button:hover {
+    background: inherit;
+    color: red;
+}
+
+.playlist li:hover,
+.musiclist li:hover,
+.btn-dots:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+.indicator {
+    height: 200px;
+}
+
+.equalizer {
+    position: absolute;
+    bottom: 27%;
+    left: 90%;
+    display: block;
+    width: 5px;
+    background-color: #336699;
+    height: 2.5px;
+}
+
+.equalizer,
+.equalizer::before,
+.equalizer::after {
+    animation: equalize 1.25s steps(25, end) 0s infinite;
+}
+
+.equalizer::before,
+.equalizer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 7px;
+    height: 17.5px;
+    width: 5px;
+    background-color: #336699;
+}
+
+.equalizer::before {
+    animation-name: equalize2;
+}
+
+.equalizer::after {
+    left: 14px;
+    animation-name: equalize3;
+}
+
+@keyframes equalize {
+    0% {
+        height: 5px;
+    }
+    4% {
+        height: 2.5px;
+    }
+    8% {
+        height: 5px;
+    }
+    12% {
+        height: 8.75px;
+    }
+    16% {
+        height: 12.5px;
+    }
+    20% {
+        height: 16.25px;
+    }
+    24% {
+        height: 15px;
+    }
+    28% {
+        height: 13.75px;
+    }
+    32% {
+        height: 13.75px;
+    }
+    36% {
+        height: 10px;
+    }
+    40% {
+        height: 12.5px;
+    }
+    44% {
+        height: 12.5px;
+    }
+    48% {
+        height: 13.75px;
+    }
+    52% {
+        height: 15px;
+    }
+    56% {
+        height: 16.25px;
+    }
+    60% {
+        height: 15px;
+    }
+    64% {
+        height: 15px;
+    }
+    68% {
+        height: 13.75px;
+    }
+    72% {
+        height: 12.5px;
+    }
+    76% {
+        height: 13.75px;
+    }
+    80% {
+        height: 15px;
+    }
+    84% {
+        height: 15px;
+    }
+    88% {
+        height: 16.25px;
+    }
+    92% {
+        height: 12.5px;
+    }
+    96% {
+        height: 8.75px;
+    }
+    100% {
+        height: 5px;
+    }
+}
+
+@keyframes equalize2 {
+    0% {
+        height: 15px;
+    }
+    4% {
+        height: 16.25px;
+    }
+    8% {
+        height: 15px;
+    }
+    12% {
+        height: 15px;
+    }
+    16% {
+        height: 13.75px;
+    }
+    20% {
+        height: 13.75px;
+    }
+    24% {
+        height: 13.75px;
+    }
+    28% {
+        height: 15px;
+    }
+    32% {
+        height: 15px;
+    }
+    36% {
+        height: 16.25px;
+    }
+    40% {
+        height: 16.25px;
+    }
+    44% {
+        height: 16.25px;
+    }
+    48% {
+        height: 13.75px;
+    }
+    52% {
+        height: 10px;
+    }
+    56% {
+        height: 7.5px;
+    }
+    60% {
+        height: 10px;
+    }
+    64% {
+        height: 12.5px;
+    }
+    68% {
+        height: 13.75px;
+    }
+    72% {
+        height: 16.25px;
+    }
+    76% {
+        height: 15px;
+    }
+    80% {
+        height: 15px;
+    }
+    84% {
+        height: 13.75px;
+    }
+    88% {
+        height: 13.75px;
+    }
+    92% {
+        height: 11.25px;
+    }
+    96% {
+        height: 13.75px;
+    }
+    100% {
+        height: 15px;
+    }
+}
+
+@keyframes equalize3 {
+    0% {
+        height: 11.25px;
+    }
+    4% {
+        height: 8.75px;
+    }
+    8% {
+        height: 11.25px;
+    }
+    12% {
+        height: 13.75px;
+    }
+    16% {
+        height: 16.25px;
+    }
+    20% {
+        height: 18.75px;
+    }
+    24% {
+        height: 17.5px;
+    }
+    28% {
+        height: 13.75px;
+    }
+    32% {
+        height: 11.25px;
+    }
+    36% {
+        height: 10px;
+    }
+    40% {
+        height: 8.75px;
+    }
+    44% {
+        height: 6.25px;
+    }
+    48% {
+        height: 10px;
+    }
+    52% {
+        height: 12.5px;
+    }
+    56% {
+        height: 13.75px;
+    }
+    60% {
+        height: 16.25px;
+    }
+    64% {
+        height: 15px;
+    }
+    68% {
+        height: 13.75px;
+    }
+    72% {
+        height: 13.75px;
+    }
+    76% {
+        height: 12.5px;
+    }
+    80% {
+        height: 15px;
+    }
+    84% {
+        height: 16.25px;
+    }
+    88% {
+        height: 17.5px;
+    }
+    92% {
+        height: 15px;
+    }
+    96% {
+        height: 12.5px;
+    }
+    100% {
+        height: 11.25px;
+    }
+}
+
+.playlist-item {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border: 0px;
+    background: inherit;
+}
+
+.input-group-addon {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border: 0px;
+    background: inherit;
+}
+
+.input-group-addon:hover {
+    background: inherit;
+}

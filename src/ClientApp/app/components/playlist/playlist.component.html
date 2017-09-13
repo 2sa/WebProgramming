@@ -1,0 +1,17 @@
+<ul class="list-group playlist">
+    <li class="list-group-item" *ngFor="let song of songs">
+        <div class="input-group playlist-item">
+            <span class="input-group-addon">
+                
+                    <button (click)="songDelete(song)" href="#" class="btn-dots">
+                        <span class="glyphicon glyphicon-remove"></span>
+            </button>
+
+            </span>
+            <div class="song" (click)="togglePlay(song)">
+                <a href="#">{{song.track.artist}} - {{song.track.song}}</a>
+                <div *ngIf="song.isActive" class="equalizer"></div>
+            </div>
+        </div>
+    </li>
+</ul>
