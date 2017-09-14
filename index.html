@@ -368,16 +368,25 @@ button[_ngcontent-1]:hover {
 {
     background-color: inherit;
     font-size:inherit;
-}
-
-.musiclist[_ngcontent-2]   li[_ngcontent-2]:hover
-{
-    background:#eee;
-    cursor: pointer;
 }</style></head><body><app ng-version="2.4.10" _nghost-0=""><div _ngcontent-0="" class="container">
         <router-outlet _ngcontent-0=""></router-outlet><music-player _nghost-3=""><div _ngcontent-3="" class="player">
-    <div _ngcontent-3="" class="row">
-        <!--template bindings={}-->
+    <div _ngcontent-3="" class="row" style="height:80px; padding-top:10px; margin-bottom:20px;">
+        <div _ngcontent-3="" class="col-xs-4 col-sm-4">
+            <!--template bindings={}-->
+        </div>
+
+        <div _ngcontent-3="" class="col-xs-8 col-sm-8">
+            <form _ngcontent-3="" novalidate="" role="form" class="ng-untouched ng-pristine ng-invalid">
+				<input _ngcontent-3="" formControlName="searchString" placeholder="Search song ..." style="
+                                width: 90%;
+                                height: 43px;
+                                font-size: 2em;
+                                border: 0;
+                                border-bottom: 3px solid #aaaaaa;
+                                margin-top:10px;" type="text" without-spaces="" value="" class="ng-untouched ng-pristine ng-invalid">
+                    <button _ngcontent-3="" class="btn btn-default" style="height:43px; margin-bottom:8px;" type="submit" disabled="disabled">Search</button>
+			</form>
+        </div>
     </div>
     <div _ngcontent-3="" class="row">
         <div _ngcontent-3="" class="col-xs-12 col-lg-4">
@@ -387,61 +396,76 @@ button[_ngcontent-1]:hover {
         </div>
         <div _ngcontent-3="" class="col-xs-12 col-sm-12 col-lg-8">
             <songlist _ngcontent-3="" _nghost-2=""><ul _ngcontent-2="" class="list-group musiclist">
-    <!--template bindings={}--><li _ngcontent-2="" class="list-group-item">
-        213 wqeqwe
-        <span _ngcontent-2="" class="badge">
-            <button _ngcontent-2="" class="btn btn-default">
-                <span _ngcontent-2="" aria-hidden="true" class="glyphicon glyphicon-plus"></span>
-            </button>
-        </span>
-    </li><li _ngcontent-2="" class="list-group-item">
-        213a2a wqeqwe2
-        <span _ngcontent-2="" class="badge">
-            <button _ngcontent-2="" class="btn btn-default">
-                <span _ngcontent-2="" aria-hidden="true" class="glyphicon glyphicon-plus"></span>
-            </button>
-        </span>
-    </li><li _ngcontent-2="" class="list-group-item">
-        aaa2132 aawqeqaaawe2
-        <span _ngcontent-2="" class="badge">
-            <button _ngcontent-2="" class="btn btn-default">
-                <span _ngcontent-2="" aria-hidden="true" class="glyphicon glyphicon-plus"></span>
-            </button>
+    <li _ngcontent-2="" class="list-group-item">
+        Sort by <button _ngcontent-2="">Artist</button> <button _ngcontent-2="">Song</button>
+        <span _ngcontent-2="" class="badge" style="color:#222222;">
+             Songs in playlist: 0
         </span>
     </li> 
 
-    0               
+    <!--template bindings={}--><li _ngcontent-2="" class="list-group-item">
+
+        <span _ngcontent-2="" class="badge">
+            <button _ngcontent-2="" class="btn btn-default">
+                <span _ngcontent-2="" aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+            </button>
+        </span>
+        213 - wqeqwe <br _ngcontent-2="">
+            <span _ngcontent-2="" style="color:#777777; font-size:1.3rem;">uyqtwrqyg1, 2007</span>
+        
+    </li><li _ngcontent-2="" class="list-group-item">
+
+        <span _ngcontent-2="" class="badge">
+            <button _ngcontent-2="" class="btn btn-default">
+                <span _ngcontent-2="" aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+            </button>
+        </span>
+        213a2a - wqeqwe2 <br _ngcontent-2="">
+            <span _ngcontent-2="" style="color:#777777; font-size:1.3rem;">uyqtwrqyg, 2007</span>
+        
+    </li><li _ngcontent-2="" class="list-group-item">
+
+        <span _ngcontent-2="" class="badge">
+            <button _ngcontent-2="" class="btn btn-default">
+                <span _ngcontent-2="" aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+            </button>
+        </span>
+        aaa2132 - aawqeqaaawe2 <br _ngcontent-2="">
+            <span _ngcontent-2="" style="color:#777777; font-size:1.3rem;">uyqtwrqyg2, 2007</span>
+        
+    </li><li _ngcontent-2="" class="list-group-item">
+
+        <span _ngcontent-2="" class="badge">
+            <button _ngcontent-2="" class="btn btn-default">
+                <span _ngcontent-2="" aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+            </button>
+        </span>
+        Quwy weurwe - rwe erwerewr <br _ngcontent-2="">
+            <span _ngcontent-2="" style="color:#777777; font-size:1.3rem;">uyqtwrqyg3, 2007</span>
+        
+    </li><li _ngcontent-2="" class="list-group-item">
+
+        <span _ngcontent-2="" class="badge">
+            <button _ngcontent-2="" class="btn btn-default">
+                <span _ngcontent-2="" aria-hidden="true" class="glyphicon glyphicon-plus"></span>
+            </button>
+        </span>
+        The ewuiereiwu - 4fsfsdfsdf <br _ngcontent-2="">
+            <span _ngcontent-2="" style="color:#777777; font-size:1.3rem;">uyqtwrqyg4, 2007</span>
+        
+    </li>             
 </ul></songlist>
-            <nav _ngcontent-3="" aria-label="Page navigation">
-                <ul _ngcontent-3="" class="pagination">
-                    <li _ngcontent-3="">
-                        <a _ngcontent-3="" aria-label="Previous" href="#">
-                            <span _ngcontent-3="" aria-hidden="true">«</span>
-                        </a>
-                    </li>
-                    <li _ngcontent-3=""><a _ngcontent-3="" href="#">1</a></li>
-                    <li _ngcontent-3=""><a _ngcontent-3="" href="#">2</a></li>
-                    <li _ngcontent-3=""><a _ngcontent-3="" href="#">3</a></li>
-                    <li _ngcontent-3=""><a _ngcontent-3="" href="#">4</a></li>
-                    <li _ngcontent-3=""><a _ngcontent-3="" href="#">5</a></li>
-                    <li _ngcontent-3="">
-                        <a _ngcontent-3="" aria-label="Next" href="#">
-                            <span _ngcontent-3="" aria-hidden="true">»</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </div>
 </div></music-player>
 </div> </app><universal-script><script>
- try {window.UNIVERSAL_CACHE = ({"APP_ID":"2d7b"}) || {};} catch(e) {  console.warn("Angular Universal: There was a problem parsing data from the server")}
+ try {window.UNIVERSAL_CACHE = ({"APP_ID":"194c"}) || {};} catch(e) {  console.warn("Angular Universal: There was a problem parsing data from the server")}
 </script></universal-script></body></html></app>
 
 <script src="/WebProgramming/dist/vendor.js?v=vOJCaVt-OToMTujuAtN2etyNPuVrLtA5pZMkAwnMnOk"></script>
 
     
-    <script src="/WebProgramming/dist/main-client.js?v=ToxJOs01BRUQMEWb4nYrb050WP_P2wh7kmMGeGfuJ7I"></script>
+    <script src="/WebProgramming/dist/main-client.js?v=oGHUCbUC8X_Kt4antxXwCznSrgqXKvVDJ5IrTPjH55A"></script>
 
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
