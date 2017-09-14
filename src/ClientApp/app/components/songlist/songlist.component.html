@@ -1,12 +1,20 @@
 <ul class="list-group musiclist">
+    <li class="list-group-item">
+        Sort by <button (click)="sortByArtistName()">Artist</button> <button (click)="sortBySongName()">Song</button>
+        <span style="color:#222222;" class="badge">
+             Songs in playlist: {{ currentCount }}
+        </span>
+    </li> 
+
     <li *ngFor="let song_ of songs" class="list-group-item">
-        {{song_.artist}} {{song_.song}}
+
         <span class="badge">
             <button class="btn btn-default" (click)="addToPlayList(song_)">
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
             </button>
         </span>
-    </li> 
-
-    {{ currentCount }}               
+        {{song_.artist}} - {{song_.song}} <br />
+            <span style="color:#777777; font-size:1.3rem;">{{song_.album}}, {{song_.year}}</span>
+        
+    </li>             
 </ul>

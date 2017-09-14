@@ -28,4 +28,6 @@ export class TrackDescription {
     song: string;
     trackUrl: string;
     songId: number;
+    album:string; 
+    year:number;
 }

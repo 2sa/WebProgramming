@@ -1,11 +1,26 @@
 <div class="player">
-    <div class="row">
-        <div *ngIf="isActive" class="col-xs-12 col-sm-12">
-            Now playing: {{inPlay}} - {{songForPlay.track.artist}} - {{songForPlay.track.song}}<br />
-            <audio id="audioPlayer" (ended)="onPlayEnded()" controls autoplay>
-                    <source src="{{songForPlay.track.trackUrl}}" type="audio/mpeg">
-                    Тег audio не поддерживается вашим браузером. 
-            </audio>
+    <div style="height:80px; padding-top:10px; margin-bottom:20px;" class="row">
+        <div class="col-xs-4 col-sm-4">
+            <div *ngIf="isActive">Now playing: {{inPlay}} - {{songForPlay.track.artist}} - {{songForPlay.track.song}}<br />
+                <audio id="audioPlayer" (ended)="onPlayEnded()" controls autoplay>
+                        <source src="{{songForPlay.track.trackUrl}}" type="audio/mpeg">
+                        Тег audio не поддерживается вашим браузером. 
+                </audio>
+            </div>
+        </div>
+
+        <div class="col-xs-8 col-sm-8">
+            <form [formGroup]="searchForm" role="form" novalidate (submit)="search(searchForm.value)">
+				<input (input)="search($event.target.value)" style="
+                                width: 90%;
+                                height: 43px;
+                                font-size: 2em;
+                                border: 0;
+                                border-bottom: 3px solid #aaaaaa;
+                                margin-top:10px;"
+                        without-spaces type="text" formControlName="searchString" placeholder="Search song ..." />
+                    <button style="height:43px; margin-bottom:8px;" class="btn btn-default" type="submit" [disabled]="searchForm.invalid">Search</button>
+			</form>
         </div>
     </div>
     <div class="row">
@@ -13,26 +28,7 @@
             <playlist [songs]="playListSongs" (onSongChange)="updatePlayer($event)" (onSongDelete)="songDeleted($event)"></playlist>
         </div>
         <div class="col-xs-12 col-sm-12 col-lg-8">
-            <songlist [songs]="allSongs" (onSongAddedToPlayList)="playlistAddSong($event)"></songlist>
-            <nav aria-label="Page navigation">
-                <ul class="pagination">
-                    <li>
-                        <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li>
-                        <a href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <songlist [songs]="songs" (onSongAddedToPlayList)="playlistAddSong($event)"></songlist>
         </div>
     </div>
 </div>

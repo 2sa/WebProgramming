@@ -7,6 +7,7 @@ import { PlayerComponent } from './components/player/player.component';
 import { PlayListComponent } from './components/playlist/playlist.component';
 import { SonglistComponent } from './components/songlist/songlist.component';
 import {APP_BASE_HREF} from '@angular/common';
+import {ReactiveFormsModule,  FormsModule} from '@angular/forms';
 
 @NgModule({
     bootstrap: [ AppComponent ],
@@ -18,6 +19,8 @@ import {APP_BASE_HREF} from '@angular/common';
     ],
     imports: [
         UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
+        FormsModule,
+		ReactiveFormsModule,
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: PlayerComponent },
